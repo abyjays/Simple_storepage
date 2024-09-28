@@ -1,0 +1,54 @@
+<html>
+
+    <head>
+        <title>
+            Login Page
+        </title>
+        <meta name="viewport" content="width=device-width,  initial-scale=1">
+        <!-- Icon for title bar -->
+        <link rel="icon" type="image/x-icon" href="css/images/website-icon-1.ico">
+    </head>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/loader.css">
+    <script src="js/mainpage.js"></script>
+    
+    <body>
+
+        <form action="mainpage.html">
+            <h1>
+                <center>Login page</center>
+            </h1><br>
+            <section>
+                <!--Login page -->
+                <div class="container">
+                    <label for="uname"><b>Username</b></label>
+                    <input type="text" placeholder="Enter Username" name="uname" required>
+
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+
+                    <button type="submit">Login</button>
+                    <label for="">
+                    <input type="checkbox" name="rememberme" checked="checked">Remember me
+                    </label>
+                </div>
+
+                <div class="container" style="background-color: #310e68;">
+                    <button type="reset" class="resetbtn">Reset</button>
+                    <span class="fp">Forgot <a href="forgotpassword.html" style="color:rgb(255, 255, 255);">password?</a>
+                    </span>
+                </div>
+
+                <div class="d1">
+                    <center><span class="">Not registered? <a href="createaccountpage.html" style="color: white;"> Create an
+                            account</a></span></center>
+                </div>
+            </section>
+            <!-- Loading screen -->
+            <div class="loader"></div>
+        </form>
+
+
+    </body>
+
+</html>

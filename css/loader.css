@@ -1,0 +1,37 @@
+/* HTML: <div class="loader"></div> */
+.loader {
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(109.8deg, rgb(62, 5, 116) -5.2%, rgb(41, 14, 151) -5.2%, rgb(216, 68, 148) 103.3%);
+    transition: opacity 0.75s, visibility 0.75s;
+  }
+
+  .loader-hidden{
+    opacity: 0;
+    visibility: hidden;
+  }
+ 
+  .loader::after{
+    content: "";
+    width: 40px;
+    height: 40px;
+    border: 10px solid #dddddddd;
+    border-top-color: #7449f5;
+    border-radius: 100%;
+    animation: loading 0.75s ease infinite;
+  }
+
+  @keyframes loading{
+    form{
+        transform: rotate(0turn);
+    }
+    to{
+        transform: rotate(1turn);
+    }
+  }

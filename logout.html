@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <title>Loading...</title>
+        <meta http-equiv = "refresh" content = "1; index.html" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/x-icon" href="css/images/website-icon-1.ico">
+    </head>
+
+    <style>
+        h1{
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            padding: 40px;
+            transform: translate(-50%, -50%);
+        }
+
+        .loader {
+            position:fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 110vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: opacity 0.75s, visibility 0.75s;
+        }
+
+        .loader-hidden{
+            opacity: 0;
+            visibility: hidden;
+        }
+ 
+        .loader::after{
+            content: "";
+            width: 40px;
+            height: 40px;
+            border: 10px solid #dddddddd;
+            border-top-color: #7449f5;
+            border-radius: 100%;
+            animation: loading 0.75s ease infinite;
+        }
+
+        @keyframes loading{
+         form{
+                transform: rotate(0turn);
+            }
+            to{
+                transform: rotate(1turn);
+            }
+        }
+    </style>
+
+    <body style="background: linear-gradient(#310e68 0%, #5f0f40 74%); color: white;">
+       <center><h1 style="color: white;">You successfully logged out</h1></center> 
+    </body>
+
+    <div class="loader"></div>
+</html>
